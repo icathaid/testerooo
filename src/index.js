@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 
-import App from './components/app.js';
+import App from "./components/app.js";
 
-import createStore from './store/';
+import createStore from "./store/";
 const store = createStore();
+
+//  test
 
 function Main() {
   return (
@@ -15,5 +17,7 @@ function Main() {
   );
 }
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById(
+  "root"
+);
 ReactDOM.render(<Main />, rootElement);
